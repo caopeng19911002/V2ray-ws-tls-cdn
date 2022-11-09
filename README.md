@@ -22,7 +22,9 @@
 
 执行Xray一键安装脚本
 
-wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/mack-a/v2ray-agent/master/install.sh" && chmod 700 /root/install.sh && /root/install.sh
+```bash
+   wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/mack-a/v2ray-agent/master/install.sh" && chmod 700 /root/install.sh && /root/install.sh
+   ```
 
 该脚本运行一次以后，以后想调出该脚本使用，只需要在 VPS 命令行输入 vasma 即可。
 若是忘记了各项配置参数，可以在 VPS 里面输入上述 vasma ，然后输入数字 3 ——查看账号，即可翻看原先搭建的各项协议参数。
@@ -30,7 +32,9 @@ wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/mack-
 
 Cloudflare优选IP MacOS运行代码：
 
-curl https://raw.githubusercontent.com/badafans/better-cloudflare-ip/master/shell/cf.sh -o cf.sh && chmod +x cf.sh && ./cf.sh
+```bash
+   curl https://raw.githubusercontent.com/badafans/better-cloudflare-ip/master/shell/cf.sh -o cf.sh && chmod +x cf.sh && ./cf.sh
+   ```
 
 打开Cloudflare 小云朵
 
