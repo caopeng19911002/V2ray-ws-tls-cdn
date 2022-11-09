@@ -1,10 +1,12 @@
 搭建v2ray开启Debian自带BBR加速
 
 把下面代码一起复制并粘贴到VPS命令行中执行，有回显  tcp_bbr   20480  即为开启！
-* 		echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf
-* 		echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf
-* 		sysctl -p
-* 		lsmod | grep bbr
+```bash
+   echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf
+   echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf
+   sysctl -p
+   lsmod | grep bbr
+   ```
 
 搭建Xray
 
